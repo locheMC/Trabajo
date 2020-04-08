@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="jquery.js"></script>
+
+      <script>
+        $(document).ready(function(){
+          $("body").css("background","#ffffff");
+          var cssh1 = {
+            'text-align': 'center',
+            'color': 'red'
+          }
+          $("h1").css(cssh1);
+
+          var pt2 = $('#t2').css('background-color');
+          var rt2 = $('#t2').css('color');
+          if(pt2 === rt2)
+            $('#t2').css('color','#ffffff');
+        });
+      </script>
+      <style>
+        body,html{
+          background: aqua;
+          color: #000;
+          font-family: Arial;
+          margin:0;
+          padding:0;
+        }
+        #t1{
+          background: #f6f6f6;
+          height: 50px;
+          margin: 5% auto;
+          width: 300px;
+        }
+        #t2{
+          display: block;
+          background: #000;
+          height: 50px;
+          margin: 5% auto;
+          width: 300px;
+        }
+      </style>
+  </head>
+  <body>
+    <h1>Aqui se escribe un titulo</h1>
+    <div id="t1">Valor</div>
+    <div id="t2">Otro valor</div>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="jquery.js"></script>
+    <script>
+      $(document).ready(function(){
+        //console.log($('header img').width(100))
+        //console.log($('#a1').height(50))
+        var po = $('#a2 p').position();
+        var po2 = $('#a2 p').offset();
+        console.log('position left: ' + po.left + ' position top: ' + po.top);
+        console.log('position left: ' + po2.left + ' position top: ' + po2.top);
+      });
+    </script>
+    <style>
+      body{
+        background:#000;
+        margin: 0;
+        padding: 0;
+      }
+      header{
+        display: block;
+        margin: 0;
+        width: 365px;
+      }
+      #a1,#a2{
+        background: #000;
+        margin: 0;
+        padding: 0;
+      }
+      #a1{
+        background: #ff0040;
+        height: 150px;
+      }
+      #a2{
+        padding: 15px;
+        border-radius: 60px 0px 60px 0px;
+      }
+      p{
+        margin-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="img/2.png">
+    </header>
+    <div id="a1"></div>
+    <div id="a2"> <p>Texto</p> </div>
+  </body>
+</html>

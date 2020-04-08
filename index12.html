@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="jquery.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('a').click(function(e){
+          e.preventdefault();
+          var link $(this).attr('href');
+          alert("Que le vaya bien :)");
+          location.href = link;
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="p1" class='p1c'></div>
+    <a href="https://tutorialesprogramacionya.com/javascriptya/index.php?inicio=0">Texto una vez mas</a>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="jquery.js"></script>
+    <script>
+      $(document).ready(function(){
+        var seleccion = $('.uno');
+        if(seleccion.length)
+          console.log('Existen: ' + seleccion.length);
+        else
+          console.log('No Existe el elemento seleccionado');
+
+          //seleccion.not('.1').text('Este elemento no tiene la clase');
+
+          //seleccion.has('p').text('Este elemento tiene p en su contenido');
+
+          $('li').first().html('<strong>Soy el 1</strong>');
+          $('li').eq(2).text('Soy el 3');
+      });
+    </script>
+  </head>
+  <body>
+    <div class="uno 1">
+      <p></p>
+    </div>
+    <div class="uno">
+      <span></span>
+    </div>
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </body>
+</html>
